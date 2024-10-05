@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 
 </head>
 <body>
     <div class="banner">
         <h2>Login</h2>
-    </div>
+    </div>  
 
 
     <?php
     session_start();
-
-    // Display error message if it exists
     if (isset($_SESSION['error'])) {
         echo "<div style='color: red;'>" . $_SESSION['error'] . "</div>";
         unset($_SESSION['error']); 
