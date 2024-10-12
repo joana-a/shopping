@@ -18,7 +18,7 @@
     if (isset($_SESSION['error'])) {
         echo "<div style='color: red;'>" . $_SESSION['error'] . "</div>";
         unset($_SESSION['error']); 
-    }
+    } 
     ?>
 
     <form id="loginForm" action="../actions/loginprocess.php" method="POST">

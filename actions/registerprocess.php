@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $city = $_POST["city"];
     $contact_no = $_POST["contact_no"];
     $user_role = 2;  
-
+ 
 
 
     // Call the registerUser method in GeneralController

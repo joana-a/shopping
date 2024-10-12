@@ -20,7 +20,7 @@ class customer_class extends db_connection
         VALUES ('$customer_name', '$email', '$password', '$country', '$city', '$contact_no', '$user_role')";
         return $this->db_query($sql);
 	}
-
+ 
 	
     public function loginUser($email, $password)
     {
@@ -51,6 +51,13 @@ class customer_class extends db_connection
             echo "Not Found";
             return false;
         }
+    }
+
+    public function viewAllCustomers(){
+        $ndb = new db_connection();
+        $sql = "SELECT * FROM customers";
+        return $this->db_fetch_all($sql); 
+
     }
       
 }

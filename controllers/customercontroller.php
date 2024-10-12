@@ -16,11 +16,14 @@ function loginUser_ctr($email, $password) {
     
     return $result;
 }
+function get_customers_controller() {
+    $newProduct = new customer_class();
+    return $newProduct->viewAllCustomers();
+} 
 
 
-
-
-
+ 
+ 
 
 
 

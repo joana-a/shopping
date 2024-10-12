@@ -8,7 +8,7 @@ function add_product_controller($category, $brand, $title, $price, $description,
 
 }
 
-function delete_product_controller($productId) {
+function delete_product_controller($productId) { 
     $newProduct = new productClass();
     return $newProduct->deleteProduct($productId);
 }

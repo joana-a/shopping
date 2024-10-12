@@ -32,4 +32,4 @@ class productClass extends db_connection
         return $this->db_fetch_all($sql); 
 
     }
-}
+} 
