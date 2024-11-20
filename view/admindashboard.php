@@ -15,6 +15,9 @@
                 <a href="categories.php">Categories</a>
                 <a href="products.php">Products</a>
             </div>
+            <div class="user-box">
+                 <a href="../login/logout.php" class="delete-btn">logout</a>
+            </div>
         </div>
     </header>
 

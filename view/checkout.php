@@ -14,7 +14,7 @@
 
 <div class="heading">
    <h3>Checkout</h3>
-   <p><a href="../views/home.php">Home</a> / Checkout</p>
+   <p><a href="../view/home.php">Home</a> / Checkout</p>
 </div>
 
 
