@@ -1,7 +1,7 @@
 <?php
 session_start();
-if (isset($_SESSION['c_id'])) {
-    $customer_id = $_SESSION['c_id'];
+if (isset($_SESSION['user_id'])) {
+    $customer_id = $_SESSION['user_id'];
 } else {
     $customer_id = null;  
 }
@@ -16,7 +16,7 @@ if (isset($_SESSION['c_id'])) {
    <title>orders</title>
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-   <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="../css/stylee.css">
 
 </head>
 <body>
@@ -35,7 +35,7 @@ if (isset($_SESSION['c_id'])) {
    <div class="box-container">
 
       <?php
-         $order_query = mysqli_query($mysqli, "SELECT * FROM `orders` WHERE customer_id = '$customer_id'") or die('query failed');
+         $order_query = mysqli_query($mysqli, "SELECT * FROM `orders` WHERE `customer_id` = '$customer_id'") or die('query failed');
          if(mysqli_num_rows($order_query) > 0){
             while($fetch_orders = mysqli_fetch_assoc($order_query)){
       ?>

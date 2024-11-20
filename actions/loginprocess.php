@@ -19,14 +19,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: ../view/home.php");
             exit();
         } else {
-            header("Location: ../view/login.php?error=invalid_credentials");
+            header("Location: ../login/login.php?error=invalid_credentials");
             exit();
         }
     } else {
-        header("Location: ../view/login.php?error=missing_fields");
+        header("Location: ../login/login.php?error=missing_fields");
         exit();
     }
 } else {
-    header("Location: ../view/login.php");
+    header("Location: ../login/login.php");
     exit();
 }

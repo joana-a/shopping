@@ -1,9 +1,10 @@
 <?php
-include_once '../settings/connection.php';
+include_once 'db_class.php';
 session_start();
 
-unset($_SESSION['customer_id']); 
-unset($_SESSION['user_role']); 
+session_unset ();
+
+session_destroy ();
 
 header("Location: ../login/login.php");
 

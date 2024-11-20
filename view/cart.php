@@ -20,8 +20,9 @@
     <div class="box-container">
         <?php
         require_once '../controllers/cart_controller.php';
-
-        $cartItems = viewCart_ctr();
+        session_start();
+        $customerId = $_SESSION['user_id'];
+        $cartItems = viewCart_ctr($customerId);
         $grand_total = 0;
         if (!empty($cartItems)) {
             foreach ($cartItems as $item) {
@@ -53,7 +54,7 @@
     <div class="cart-total">
         <p>Total: <span>$<?php echo $grand_total; ?>/-</span></p>
         <div class="flex">
-            <a href="../view/checkout.php" class="btn">Proceed to Checkout</a>
+            <a href="../actions/add_order_action.php" class="btn">Proceed to Checkout</a>
             <a href="../view/home.php" class="option-btn">Continue Shopping</a>
         </div>
     </div>

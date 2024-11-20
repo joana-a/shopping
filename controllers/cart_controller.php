@@ -7,9 +7,9 @@
     return $result;
  } 
 
- function viewCart_ctr(){
+ function viewCart_ctr($customerId){
    $cartClass= new cart_class(); 
-   return $cartClass->viewCart();
+   return $cartClass->viewCart($customerId);
  }
 
  function deleteCart_ctr($productId){
