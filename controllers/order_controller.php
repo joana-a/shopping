@@ -8,15 +8,7 @@ function add_order_controller($customer_id, $invoice, $order_date, $status) {
 
 }
 
-// function delete_brand_controller($brandId) {
-//     $newBrand = new brandClass();
-//     return $newBrand->deleteBrand($brandId);
-// }
 
-// function get_brands_controller() {
-//     $newBrand = new brandClass();
-//     return $newBrand->getBrands();
-// }
     
 
    

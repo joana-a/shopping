@@ -14,22 +14,9 @@ class order_class extends db_connection {
         $status = mysqli_real_escape_string($this->db_conn(), $status);
 
         $sql = "INSERT INTO orders (customer_id, invoice_no, order_date, order_status)
-                VALUES ('$customer_id', '$invoice', '$order_date', '$status)"; 
+                VALUES ('$customer_id', '$invoice', '$order_date', '$status')"; 
         
                 return $this->db_query($sql);
     }
-
-    // public function deleteBrand($brandId) {
-    //     $brandId = mysqli_real_escape_string($this->db_conn(), $brandId);
-    //     $sql = "DELETE FROM brands WHERE brand_id = '$brandId'";
-    //     return $this->db_query($sql);
-    // }
-
-    // public function getBrands() {
-    //     $sql = "SELECT * FROM brands";
-    //     return $this->db_fetch_all($sql);
-
-      
-    // }
 
 }

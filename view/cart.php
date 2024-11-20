@@ -52,12 +52,15 @@
     </div> 
 
     <div class="cart-total">
-        <p>Total: <span>$<?php echo $grand_total; ?>/-</span></p>
-        <div class="flex">
-            <a href="../actions/add_order_action.php" class="btn">Proceed to Checkout</a>
-            <a href="../view/home.php" class="option-btn">Continue Shopping</a>
-        </div>
+    <p>Total: <span>$<?php echo $grand_total; ?>/-</span></p>
+    <div class="flex">
+        <form action="../actions/add_order_action.php" method="POST">
+            <button type="submit" class="btn">Proceed to Checkout</button>
+        </form>
+        <a href="../view/home.php" class="option-btn">Continue Shopping</a>
     </div>
+</div>
+
 
 </section>
 

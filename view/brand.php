@@ -15,6 +15,12 @@
 <section class="add-products">
 
    <h1 class="title">Brands</h1>
+   <p style="text-align: center; font-size: 24px; font-weight: bold;">
+    <a href="../view/admindashboard.php" style="text-decoration: none; color: #007bff; padding: 0px 10px; 
+    border-radius: 5px; font-weight: bold; background-color: #f8f9fa;">Dashboard</a> / Brands
+</p>
+
+
 
    <form action="../actions/add_brand_action.php" method="post" enctype="multipart/form-data">
       <h3>Add brand</h3>
